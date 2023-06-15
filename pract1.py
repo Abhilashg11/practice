@@ -8,14 +8,21 @@
 # my_list.sort()
 # print(my_list)
 
-# mt_list1=[0] * 5
-# print(mt_list1)
-# new_=my_list + mt_list1
-# print(new_[1:3])
+# myset = set([1,2,3,1,2])
+# print(myset)
 
-##tuples
-mytuple = tuple(["hi","mt","fir"])
-print(mytuple)
+setA = {1,2,3,8,9}
+setB = {4,5,1,6,7}
+setA.difference_update(setB)
 
-print(mytuple[0])
+print(setA)
+
+
+
+
+
+
+
+
+
 
