@@ -13,9 +13,10 @@
 
 setA = {1,2,3,8,9}
 setB = {4,5,1,6,7}
-setA.difference_update(setB)
 
-print(setA)
+
+print(setA.issubset(setB))
+
 
 
 
