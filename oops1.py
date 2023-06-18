@@ -1,4 +1,5 @@
 class item:
+    pay_rate = 0.8
     def __init__(self,name:str,price,quantity=0):
         assert price >= 0, f"price not {price}"
         assert quantity >=0,f"quantity not{quantity}"
@@ -10,11 +11,12 @@ class item:
         return self.price * self.quantity
 
  
-item1 = item(100,500,-1)
+item1 = item(100,500, 1)
 print(item1.name)
 print(item1.price)
 print(item1.quantity)
 
+print(item.pay_rate)
 # print(item1.calculate())
 
 # item2 = item()
