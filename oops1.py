@@ -1,5 +1,7 @@
 class item:
-    def __init__(self,name,price,quantity=0):
+    def __init__(self,name:str,price,quantity=0):
+        assert price >= 0
+        assert quantity >=0
         print("hi")
         self.name = name
         self.price = price
@@ -8,12 +10,12 @@ class item:
         return self.price * self.quantity
 
  
-item1 = item("phone",500,3)
+item1 = item(100,500,-1)
 print(item1.name)
 print(item1.price)
 print(item1.quantity)
 
-print(item1.calculate())
+# print(item1.calculate())
 
 # item2 = item()
 # item2.name = "laptop"
