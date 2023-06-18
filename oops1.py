@@ -1,7 +1,7 @@
 class item:
     def __init__(self,name:str,price,quantity=0):
-        assert price >= 0
-        assert quantity >=0
+        assert price >= 0, f"price not {price}"
+        assert quantity >=0,f"quantity not{quantity}"
         print("hi")
         self.name = name
         self.price = price
