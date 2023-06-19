@@ -16,8 +16,10 @@ print(item1.name)
 print(item1.price)
 print(item1.quantity)
 
-print(item.pay_rate)
-print(item1.pay_rate)
+print(item.__dict__)
+print(item1.__dict__)
+
+
 # print(item1.calculate())
 
 # item2 = item()
