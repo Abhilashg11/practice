@@ -16,7 +16,8 @@ class item:
         self.price = self.price * item.pay_rate
     def __repr__(self):
         return f"item('{self.name}',{self.price},{self.quantity})"  
-    def instantiate_from_csv(self):  
+    def instantiate_from_csv(self): 
+        pass 
 
 
 print(item.all)
