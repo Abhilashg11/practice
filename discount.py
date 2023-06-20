@@ -26,7 +26,11 @@ class item:
                 price = float(i.get('price')),
                 quantity = int(i.get('quantity'))
             )
-            
+    @staticmethod        
+    def is_integer(num):
+        if isinstance(num,float):
+            return num.is_integer()
+
 
     def __repr__(self):
         return f"item('{self.name}',{self.price},{self.quantity})"  
