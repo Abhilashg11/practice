@@ -30,6 +30,10 @@ class item:
     def is_integer(num):
         if isinstance(num,float):
             return num.is_integer()
+        elif isinstance(num,int):
+            return True
+        else:
+            retuen False
 
 
     def __repr__(self):
