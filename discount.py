@@ -33,7 +33,7 @@ class item:
         elif isinstance(num,int):
             return True
         else:
-            retuen False
+            return False
 
 
     def __repr__(self):
@@ -41,5 +41,4 @@ class item:
     
 
 
-item.instantiate_from_csv()
-print(item.all)
+print(item.is_integer(7.0))
