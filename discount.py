@@ -45,12 +45,15 @@ class item:
 class phone(item):
      all = []
      def __init__(self,name:str,price:float,quantity=0,broken_phones=0):
-        assert price >= 0, f"price {price} is not greater then zero"
-        assert quantity >=0,f"quantity {quantity} is not greater than zero"
+        super().__init__(
+            name,price,quantity
+        )
+        # assert price >= 0, f"price {price} is not greater then zero"
+        # assert quantity >=0,f"quantity {quantity} is not greater than zero"
         assert broken_phones >=0,f"quantity {broken_phones} is not greater than zero"
-        self.name = name
-        self.price = price
-        self.quantity = quantity
+        # self.name = name
+        # self.price = price
+        # self.quantity = quantity
         self.broken_phones = broken_phones
 
         phone.all.append(self)
