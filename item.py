@@ -6,11 +6,20 @@ class item:
         assert price >= 0, f"price {price} is not greater then zero"
         assert quantity >=0,f"quantity {quantity} is not greater than zero"
        
-        self.name = name
+        self.__name = name
         self.price = price
         self.quantity = quantity
 
         item.all.append(self)
+    @property
+    def name(self):
+        return self.__name
+    
+    @name.setter
+    def name(self,value):
+        if len(value) > 10:
+            raise Exception("yhe name is too long")
+        self.__name = value
    
     def calculate(self):
         return self.price * self.quantity
@@ -39,3 +48,5 @@ class item:
 
     def __repr__(self):
         return f"{self.__class__.__name__}('{self.name}',{self.price},{self.quantity})"  
+    
+    
