@@ -8,6 +8,7 @@ item1.name ="otheritem"
 
 print(item1.name)
 print("this I'd item1")
+print("next item is to be printed")
 
 
 
