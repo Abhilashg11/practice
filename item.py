@@ -34,7 +34,7 @@ class item:
             item(
                 name = i.get("name"),
                 price = float(i.get('price')),
-                quantity = int(i.get('quantity'))
+                quantity = int(i.get('quntity'))
             )
     @staticmethod        
     def is_integer(num):
