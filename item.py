@@ -33,7 +33,7 @@ class item:
         for i in  items1:
             item(
                 name = i.get("name"),
-                price = float(i.get('price')),
+                price = float(i.get('pric')),
                 quantity = int(i.get('quntity'))
             )
     @staticmethod        
