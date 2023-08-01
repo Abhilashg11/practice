@@ -18,7 +18,7 @@ class item:
     @name.setter
     def name(self,value):
         if len(value) > 10:
-            raise Exception("yhe name is too long")
+            raise Exception("the name is too long")
         self.__name = value
    
     def calculate(self):
