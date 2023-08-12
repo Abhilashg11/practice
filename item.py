@@ -4,7 +4,7 @@ class item:
     all = []
     def __init__(self,name:str,price:float,quantity=0):
         assert price >= 0, f"price {price} is not greater then zero"
-        assert quantity >=0,f"quantity {quantity} is not greatr than zero"
+        assert quantity >=0,f"quantity {quantity} is not greaetr than zero"
        
         self.__name = name
         self.price = price
