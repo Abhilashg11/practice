@@ -19,5 +19,5 @@ print(item2.calculate(item2.price,item2.quantity))
 
 # print(type(item1))
 # print(type(item1.name))
-# print(type(item1.price))
-# print(type(item1.quantity))
+print(type(item1.price))
+print(type(item1.quantity))
