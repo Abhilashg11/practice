@@ -3,7 +3,7 @@ from item import item
   
 # item.instantiate_from_csv()
 
-item1 = item("mytem",750)
+item1 = item("myitem",750)
 item1.name ="otheritem"
 
 print(item1.name)
