@@ -7,7 +7,7 @@ item1 = item("myitem",750)
 item1.name ="otheritem"
 
 print(item1.name)
-print("this I'd item1")
+print("this I'ditem1")
 print("next item is be printed now")
 
 
