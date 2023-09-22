@@ -3,7 +3,7 @@ class item:
     pay_rate = 0.8
     all = []
     def __init__(self,name:str,price:float,quantity=0):
-        assert price >= 0, f"price {price} is not greater thn zero"
+        assert price >= 0, f"price {price} is not greater then zero"
         assert quantity >=0,f"quantity {quantity} is not greaetr than zero"
        
         self.__name = name
