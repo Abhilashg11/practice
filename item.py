@@ -1,4 +1,4 @@
-8import csv
+import csv
 class item:
     pay_rate = 0.8
     all = []
@@ -33,7 +33,7 @@ class item:
         for i in  items1:
             item(
                 name = i.get("name"),
-                price = float(i.get('pric')),
+                price = float(i.get('price')),
                 quantity = int(i.get('quntity'))
             )
     @staticmethod        
